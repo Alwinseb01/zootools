@@ -39,7 +39,7 @@ function Behaviour() {
 
   var total_traffic = data.reduce((a, b) => a + b.traffic, 0);
   return (
-    <div className='w-10/12 bg-white shadow-md p-4 mr-3 p-8 my-4'>
+    <div className='w-10/12 bg-white rounded-lg shadow-md p-4 mr-3 p-8 my-4'>
       <div className='flex flex-col sm:flex-row justify-between items-center'>
         <h2 className='text-xl font-bold'>Behaviour</h2>
         <div className='flex flex-row items-center'>     

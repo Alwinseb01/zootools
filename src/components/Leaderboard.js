@@ -25,7 +25,7 @@ const leaderboard_data = [
 
 function Leaderboard() {
   return (
-    <div className='w-10/12 bg-white shadow-md p-4 mr-3 p-8 my-4'>
+    <div className='w-10/12 bg-white rounded-lg shadow-md p-4 mr-3 p-8 my-4'>
       <h2 className='text-xl font-bold'>User Leaderboard</h2>
       <div className=' flex flex-row mt-6 justify-between	'>
         <div className='truncate'>

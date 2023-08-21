@@ -30,7 +30,7 @@ const insight_data = [
 
 function Insights() {
   return (
-    <div className='w-10/12 bg-white shadow-md p-4 mt-8 p-8 my-4'>
+    <div className='w-10/12 bg-white rounded-lg shadow-md p-4 mt-8 p-8 my-4'>
       <h2 className='text-2xl font-bold'>ZooTools Insights</h2>
       <h3 className='text-xl'>Making analytics simple and actionable</h3>
 
