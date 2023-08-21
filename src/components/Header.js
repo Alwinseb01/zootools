@@ -28,7 +28,7 @@ function Header() {
           {
             time.map((item, index) => {
               return (
-                <button key={index} className={`text-sm font-bold rounded-md h-6 w-9 m-3 ${item.selected ? 'bg-gray-200 text-gray-500' : 'bg-gray-100 text-gray-400'}`}>{item.time}</button>
+                <button key={index} className={`text-sm font-bold rounded-md h-6 w-9 m-3 hover:bg-gray-200 ${item.selected ? 'bg-gray-200 text-gray-500' : 'bg-gray-100 text-gray-400'}`}>{item.time}</button>
               )
             })
           }
