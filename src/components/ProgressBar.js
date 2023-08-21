@@ -1,25 +1,24 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
 import { Progress } from '@ant-design/plots';
 
-const ProgressBar = () => {
-  const percent = 0.7;
-  const text = `${Math.round(percent * 100)}%`;
+const ProgressBar = ({text, percent}) => {
+//   const percent = 0.7;
 
   const textContainerStyle = {
     fontSize: '18px', // Adjust font size as needed
-    color: '#000',    // Adjust text color
+    color: 'black',    // Adjust text color
+    zIndex: 5,
   };
 
   const config = {
     percent,
-    color: ['#5B8FF9', '#E8EDF3'],
+    color: ['rgba(254,213,0, 0.4)', 'rgba(255, 255, 255, 0.1)'],
   };
 
   return (
-    <div className="relative h-16 w-64">
-      <Progress className="absolute top-0 left-0 w-full h-full" {...config} />
-      <div className="flex justify-center items-center h-full" style={textContainerStyle}>
+    <div className="relative h-full w-8/12 p-2">
+      <Progress className="absolute top-0 left-0 w-full h-full rounded-lg" {...config}/>
+      <div className="flex ml-2 items-center h-full" style={textContainerStyle}>
         {text}
       </div>
     </div>

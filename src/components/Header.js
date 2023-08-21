@@ -22,7 +22,7 @@ function Header() {
   ]
 
   return (
-    <div className='w-10/12 justify-between flex flex-row py-5'>
+    <div className='justify-between flex flex-col mt-3  py-5 md:flex-row md:w-10/12'>
         <h1 className='text-2xl font-bold'>Summer refferal competition</h1>
         <div className=' flex bg-white shadow-md w-auto h-10 rounded-md justify-center items-center'>
           {
