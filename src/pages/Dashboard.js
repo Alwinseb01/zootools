@@ -7,7 +7,7 @@ function Dashboard() {
         <Header />
         <Participants />
         <Insights />
-        <div className='flex flex-col md:flex-row w-full items-center md:w-10/12 self-center '>  
+        <div className='flex flex-col items-center md:items-stretch h-auto md:flex-row w-full md:w-10/12'>  
             <Leaderboard />
             <Traffic />
         </div>

@@ -36,8 +36,8 @@ function Insights() {
 
     
 
-      <div className='flex flex-row justify-start mt-6'>
-        <div className='w-1/2 ml-2'>
+      <div className='flex flex-col md:flex-row md:justify-start mt-6'>
+        <div className='md:w-1/2 ml-2 '>
         <h3 className='text-xl font-bold'>Summary</h3>
 
         <div className='mt-3'>
@@ -57,7 +57,7 @@ function Insights() {
 
 
         </div>
-        <div className='w-1/2 ml-2'>
+        <div className='md:w-1/2 ml-2 mt-4'>
         <h3 className='text-xl font-bold mb-4'>Recommendation</h3>
         <h5 className='font-bold mb-4'>Make sure to promote and <a href="" onClick={""} className='underline'>share your form</a></h5>
         <h5 className='font-bold mb-4'>Congrats! This is huge. Keep giving rewards for your users</h5>

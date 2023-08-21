@@ -22,9 +22,9 @@ function Header() {
   ]
 
   return (
-    <div className='justify-between flex flex-col mt-3  py-5 md:flex-row md:w-10/12'>
+    <div className=' flex flex-col mt-3 justify-center py-5 md:flex-row md:justify-between md:w-10/12'>
         <h1 className='text-2xl font-bold'>Summer refferal competition</h1>
-        <div className=' flex bg-white shadow-md w-auto h-10 rounded-md justify-center items-center'>
+        <div className=' flex bg-white shadow-md w-2/3 mt-3 self-center md:w-auto h-10 rounded-md justify-center items-center'>
           {
             time.map((item, index) => {
               return (

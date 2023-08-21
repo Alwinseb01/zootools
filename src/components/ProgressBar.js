@@ -1,7 +1,7 @@
 import React from 'react';
 import { Progress } from '@ant-design/plots';
 
-const ProgressBar = ({text, percent}) => {
+const ProgressBar = ({text, percent, flag}) => {
 //   const percent = 0.7;
 
   const textContainerStyle = {
@@ -19,6 +19,7 @@ const ProgressBar = ({text, percent}) => {
     <div className="relative h-full w-8/12 p-2">
       <Progress className="absolute top-0 left-0 w-full h-full rounded-lg" {...config}/>
       <div className="flex ml-2 items-center h-full" style={textContainerStyle}>
+      { text!='Other'? flag && <img src={flag} alt="flag" className="mr-2" /> : ""}
         {text}
       </div>
     </div>
